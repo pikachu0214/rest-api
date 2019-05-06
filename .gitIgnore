@@ -1,0 +1,9 @@
+# dependencies
+
+/node_modules
+/yarn_lock 
+.package-lock.json
+
+# production
+/build
+
