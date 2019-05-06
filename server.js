@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require('cors');
-const port = 3000;
+const PORT = process.env.PORT || 8080;
 const jsonfile = require("jsonfile");
 app.use(cors());
 
@@ -87,4 +87,4 @@ app.delete("/persons/:id", (req, res) => {
     })
     .catch(err => console.log(err));
 });
-app.listen(3000, () => console.log(`app listening on port ${port}!`));
+app.listen(PORT, () => console.log(`app listening on port ${PORT}!`));
